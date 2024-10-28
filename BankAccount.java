@@ -42,7 +42,6 @@ class Account {
 public class BankAccount {
     private Account account;
     private JFrame frame;
-    private JTextField amountField;
     private JLabel balanceLabel;
 
     public BankAccount() {
@@ -125,10 +124,6 @@ public class BankAccount {
         frame.add(mainPanel, BorderLayout.CENTER);
 
         frame.setVisible(true);
-    }
-
-    private void updateBalance() {
-        balanceLabel.setText(account.getBalance() + " EGP");
     }
 
     public static void main(String[] args) {
